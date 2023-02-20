@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Expense, type: :model do
   describe 'Validations' do
     before :each do
-      @user = User.create(name: 'King Cake')
+      @user = User.create(name: 'King Cake', email: 'cake@gmail.com', password: '123456')
       @expense = Expense.new(author: @user, name: 'emem', amount: 1.99)
     end
 
