@@ -3,6 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.3'
 
+# Use Cancancan for Authorization
+gem 'cancancan'
+
+# Use Devise for Authentication
+gem 'devise'
+
 # Use RSpec for testing
 gem 'rspec-rails'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
