@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Group, type: :model do
-  let(:user) { User.create(name: 'King Cake') }
+  let(:user) { User.create(name: 'King Cake', email: 'cake@gmail.com', password: '123456') }
   let(:group) { described_class.new(author: user, name: 'Food', icon: 'http://bit.ly/3Z67TG0') }
 
   describe 'validations' do
