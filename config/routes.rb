@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'splash_screen/index'
+  root 'splash_screen#splash'
+
   devise_for :users
 
   devise_scope :user do
-    root to: 'devise/sessions#new'
+    # root to: 'devise/sessions#new'
   end
   
   resources :users do

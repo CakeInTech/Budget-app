@@ -1,4 +1,4 @@
 class SplashScreenController < ApplicationController
-  def index
+  def splash
   end
 end
