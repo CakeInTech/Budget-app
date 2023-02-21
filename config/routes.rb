@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'splash_screen/index'
   devise_for :users
 
   devise_scope :user do
