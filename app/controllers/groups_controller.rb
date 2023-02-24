@@ -1,9 +1,9 @@
-class GroupsController < ApplicationController 
+class GroupsController < ApplicationController
   # Set group and user for before actions
-  before_action :set_group, only: %i[edit update destroy] 
+  before_action :set_group, only: %i[edit update destroy]
   before_action :set_user, only: %i[index edit create update destroy]
 
-  # GET /groups or /groups.json 
+  # GET /groups or /groups.json
   def index
     @groups = @author.groups
   end
@@ -18,7 +18,7 @@ class GroupsController < ApplicationController
 
   # POST /groups or /groups.json
   def create
-    @group = Group.new(author: @author, **group_params) 
+    @group = Group.new(author: @author, **group_params)
     if @group.save
       redirect_to groups_url, notice: 'Group was successfully created.'
     else
