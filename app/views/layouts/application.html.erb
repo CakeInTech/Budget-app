@@ -11,25 +11,32 @@
 
     <%# Bootstrap Links %>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <%#Fonts Cdn Links %>
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
   </head>
 
   <body>
-    <main class="container mx-auto mt-5 px-5">
-      <% if notice.present? %>
-        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
-          <%= notice %>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      <% elsif alert.present? %>
-        <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
-          <%= alert %>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      <% end %>
+  <% if current_user %>
+  <%= render 'shared/header'%>
+  <%end %>
+   <main class="container mx-auto">
+  <% if notice.present? %>
+    <div class="alert alert-success alert-dismissible fade show floating-notice" role="alert">
+      <%= notice %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% elsif alert.present? %>
+    <div class="alert alert-danger alert-dismissible fade show floating-notice" role="alert">
+      <%= alert %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% end %>
     </main>
-    
     <%= yield %>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-2e6l7G6cHP97JKCyLc/r+YU6J5U5BxU1EJnBySMoD0nzkexJgPywoLQWTd28fm3Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-xmJ/+IyNNAj7VStOyOu8CMT/QUZfHLz7V1DRWQcc8aVBJGcTE6yLOzc6f7muwJgN" crossorigin="anonymous"></script>
   </body>
 </html>
