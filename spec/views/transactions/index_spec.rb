@@ -11,7 +11,6 @@ RSpec.feature 'Transactions', type: :feature do
 
     @transaction = Expense.create(author: @user, name: 'cake', amount: 100, groups: [@category])
 
-
     visit root_path
     click_link 'Log In'
 
