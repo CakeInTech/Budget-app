@@ -6,4 +6,8 @@ class Group < ApplicationRecord
   validates :name, presence: true, length: { minimum: 1, maximum: 20 },
                    uniqueness: { scope: :author, message: 'You already have a category with this name' }
   validates :icon, presence: true
+
+  def total_transactions
+    expenses.sum(:amount)
+  end
 end
