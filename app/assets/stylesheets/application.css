@@ -76,6 +76,6 @@ body {
 
 @media (max-width: 767px) {
   .navbar {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
