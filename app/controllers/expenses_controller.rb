@@ -1,7 +1,7 @@
 class ExpensesController < ApplicationController
   before_action :set_expense, only: %i[edit update destroy]
   before_action :set_group, only: %i[index new edit create update destroy]
-  before_action :set_author, only: %i[index edit create update destroy]
+  before_action :set_user, only: %i[index edit create update destroy]
 
   # GET /expenses or /expenses.json
   # Gets all of the expenses for a specific group, ordered by created_at
