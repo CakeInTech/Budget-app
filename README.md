@@ -150,6 +150,8 @@ If you like this project Please star it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+[Original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) by [Gregoire](https://www.behance.net/gregoirevella) Vella on Behance
+
 I would like to thank my Friend who helped with me the deployment proccess of this project, it really helped a lot and I appreciate it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
