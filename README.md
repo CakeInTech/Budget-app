@@ -24,6 +24,7 @@
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -146,6 +147,10 @@ Feel free to check the [issues page](../../issues/).
 If you like this project Please star it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank my Friend who helped with me the deployment proccess of this project, it really helped a lot and I appreciate it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
