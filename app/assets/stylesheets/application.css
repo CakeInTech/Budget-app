@@ -26,11 +26,11 @@ body {
 }
 
 .group-container {
-  max-height: 80vh;
+  max-height: 70vh;
 }
 
 .expense-container {
-  max-height: 80%;
+  max-height: 70vh;
 }
 
 .btn-primary {
